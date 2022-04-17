@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+    max-width: 2000px;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none !important;
+    cursor: pointer;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-links {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-links {
+        width: 400px;
+    }
+    .logo{
+        margin-left: 1.5rem;
+   }
+   .links {
+        display: flex;
+        margin-right: 1.5rem;
+    }
+    .nav-links {
+        margin-right: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .body {
+        position: relative;
+    }
+
+    .logo{
+         margin-left: 2rem;
+    }
+
+    .links {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .active .nav-links {
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(146, 146, 146);
+        border-radius: 10px;
+        width: 7rem;
+        height: 13rem;
+        padding: 1rem 1rem;
+        margin-right: 0;
+    }
+
+    .hamburger {
+        display: block !important;
+        margin-left: 2rem;
+        user-select: none;
+    }
+
+
+}
+  
